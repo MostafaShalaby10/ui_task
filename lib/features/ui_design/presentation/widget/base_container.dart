@@ -36,7 +36,9 @@ class BaseContainer extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.asset(AppAssets().bicycleImage),
+              Expanded(
+                child: Image.asset(AppAssets().bicycleImage),
+              ),
               CustomTextWidget(
                 text: "30% Off",
                 fontWeight: FontWeight.w700,

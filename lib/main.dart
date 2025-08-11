@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:ui_task/features/ui_design/presentation/pages/ui_home_page.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
 
+    WidgetsFlutterBinding.ensureInitialized();
+
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarIconBrightness: Brightness.light,
+        statusBarBrightness: Brightness.dark,
+      ),
+    );
 
   runApp(MyApp());
 }
