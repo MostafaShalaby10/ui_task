@@ -11,6 +11,8 @@ String personIcon = "${svg}person.svg";
 String roadIcon = "${svg}Road.svg";
 String unionIcon = "${svg}Union.svg";
 String searchIcon = "${svg}search_icon.svg";
+String backgroundContainer = "${svg}background_container.svg";
+String listItemBackground = "${svg}list_item_background.svg";
 
 }mixin class ImagesFiles{
   ImagesFiles._();
@@ -20,6 +22,9 @@ String searchIcon = "${svg}search_icon.svg";
   String bicycle2Image = "${image}bicycle2.png";
   String bicycle3Image = "${image}bicycle3.png";
   String helmetImage = "${image}helmet.png";
+  String ContainerBackgroundPNG = "${image}container_background.png";
+  String listItemBackgroundPNG = "${image}lict_item_background.png";
+
 
 }
 class AppAssets with ImagesFiles, SvgImages {
